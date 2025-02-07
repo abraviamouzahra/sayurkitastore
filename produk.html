@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Products</title>
+</head>
+<body>
+
+   <!-- Header -->
+   <header class="bg-[#2A6049]" x-data="{ open: false }">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="flex-1 md:flex md:items-center md:gap-12">
+          <a class="block text-teal-600" href="#">
+            <span class="sr-only">Home</span>
+            <img src="sayurkitaputih.png" alt="Logo" class="h-36 mx-auto">
+          </a>
+        </div>
+  
+        
+        <div class="md:flex md:items-center md:gap-12">
+          <nav aria-label="Global" class="hidden md:block font-poppins">
+            <ul class="flex items-center gap-6 text-sm">
+              <li><a class="text-white transition hover:text-gray-500/75" href="produk.html">Shop</a></li>
+              <li><a class="text-white transition hover:text-gray-500/75" href="#">How to Shop</a></li>
+              <li><a class="text-white transition hover:text-gray-500/75" href="aboutus.html">About Us</a></li>
+              <li><a class="text-white transition hover:text-gray-500/75" href="testi.html">Testimonial</a></li>
+            </ul>
+          </nav>
+  
+          
+          <div class="hidden sm:flex items-center gap-4">
+            <a class="rounded-md bg-[#2A6049] px-5 py-2.5 text-sm font-medium text-white shadow-sm" href="#">Login</a>
+            <a class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600" href="#">Register</a>
+          </div>
+  
+        
+          <div class="block md:hidden">
+            <button @click="open = !open" class="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+              <svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+     
+      <div x-show="open" class="md:hidden bg-white shadow-md rounded-md mt-2 p-4">
+        <ul class="flex flex-col gap-4">
+          <li><a class="text-[#2A6049] block p-2 hover:bg-gray-100 rounded-md" href="produk.html">Shop</a></li>
+          <li><a class="text-[#2A6049] block p-2 hover:bg-gray-100 rounded-md" href="#">How to Shop</a></li>
+          <li><a class="text-[#2A6049] block p-2 hover:bg-gray-100 rounded-md" href="aboutus.html">About Us</a></li>
+          <li><a class="text-[#2A6049] block p-2 hover:bg-gray-100 rounded-md" href="testi.html">Testimonial</a></li>
+          <li><a class="block text-white bg-[#2A6049] p-2 rounded-md text-center" href="#">Login</a></li>
+          <li><a class="block text-[#2A6049] bg-gray-100 p-2 rounded-md text-center" href="#">Register</a></li>
+        </ul>
+      </div>
+  
+    </div>
+  </header>
+  <!-- End header -->
+
+    <!-- produk -->
+    <section>
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+          <header class="text-center">
+            <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">Product Collection</h2>
+      
+            <p class="mx-auto mt-4 max-w-md text-gray-500">
+              DARIPADA JUALAN MARI MENGENAL NAMA NAMA SAYURAN YEAHHHHHHHH SPONTAN UHUY
+            </p>
+          </header>
+      
+          <ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <li>
+              <a href="#" class="group block overflow-hidden">
+                <img
+                  src="wortel2.jpg"
+                  alt=""
+                  class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                />
+      
+                <div class="relative bg-white pt-3">
+                  <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                    Wortel
+                  </h3>
+      
+                  <p class="mt-2">
+                    <span class="sr-only"> Regular Price </span>
+      
+                    <span class="tracking-wider text-gray-900"> Rp. 12.000 </span>
+                  </p>
+                </div>
+              </a>
+            </li>
+      
+            <li>
+              <a href="#" class="group block overflow-hidden">
+                <img
+                  src="brokoli.jpg"
+                  alt=""
+                  class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                />
+      
+                <div class="relative bg-white pt-3">
+                  <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                    Brokoli
+                  </h3>
+      
+                  <p class="mt-2">
+                    <span class="sr-only"> Regular Price </span>
+      
+                    <span class="tracking-wider text-gray-900"> Rp. 21.000 </span>
+                  </p>
+                </div>
+              </a>
+            </li>
+      
+            <li>
+              <a href="#" class="group block overflow-hidden">
+                <img
+                  src="jagung.jpg"
+                  alt=""
+                  class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                />
+      
+                <div class="relative bg-white pt-3">
+                  <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                    Jagung
+                  </h3>
+                  
+      
+                  <p class="mt-2">
+                    <span class="sr-only"> Regular Price </span>
+      
+                    <span class="tracking-wider text-gray-900"> Rp. 11.000 </span>
+                  </p>
+                </div>
+              </a>
+            </li>
+      
+            <li>
+              <a href="#" class="group block overflow-hidden">
+                <img
+                  src="sawi.jpg"
+                  alt=""
+                  class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
+                />
+      
+                <div class="relative bg-white pt-3">
+                  <h3 class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4">
+                    Pakcoy
+                  </h3>
+      
+                  <p class="mt-2">
+                    <span class="sr-only"> Regular Price </span>
+      
+                    <span class="tracking-wider text-gray-900"> Rp. 14.000 </span>
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+      </section>
+    <!-- end produk -->
+</body>
+</html>
